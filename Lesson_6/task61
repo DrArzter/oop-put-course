@@ -1,0 +1,43 @@
+#include<iostream>
+#include<string>
+#include<cmath>
+using namespace std;
+
+class Numbers{
+
+private:
+
+    int a;
+    int b;
+
+public:
+
+    Numbers(int aa, int bb) {
+        this->a = aa;
+        this->b = bb;
+    }
+
+    int max(int a, int b)
+    {
+        return a > b ? a : b;
+    }
+
+    int min(int a, int b)
+    {
+        return a < b ? a : b;
+    }
+
+    float average(int a, int b)
+    {
+        return (a + b) / 2;
+    }
+};
+
+
+
+int main(){
+
+    Numbers numbers1(1,5);
+    cout << numbers1.average(1,5);
+
+};
