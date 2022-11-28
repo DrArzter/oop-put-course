@@ -17,17 +17,17 @@ public:
         this->b = bb;
     }
 
-    int max(int a, int b)
+    int max()
     {
         return a > b ? a : b;
     }
 
-    int min(int a, int b)
+    int min()
     {
         return a < b ? a : b;
     }
 
-    float average(int a, int b)
+    float average()
     {
         return (a + b) / 2;
     }
@@ -38,6 +38,8 @@ public:
 int main(){
 
     Numbers numbers1(1,5);
-    cout << numbers1.average(1,5);
+    cout << numbers1.max();
+    cout << numbers1.min();
+    cout << numbers1.average();
 
 };
