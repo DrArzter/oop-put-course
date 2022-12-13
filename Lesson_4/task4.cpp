@@ -18,7 +18,7 @@ private:
 
 public:
 
-    iPhone increse_price(float increase)
+    iPhone Increased_prece(float increase)
     {
         return std::to_string(pay + increase); /*Can't be implemented in C++*/
 
