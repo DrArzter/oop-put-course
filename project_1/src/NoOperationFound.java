@@ -1,15 +1,15 @@
-package ProjectCalculator.src;
+package project_1.src;
 
 import java.util.InputMismatchException;
 
-public class NoOperationFound implements Operation {
+class NoOperationFound implements Operation {
     private char sign;
     NoOperationFound(char sign){
         this.sign = sign;
 }
 
     @Override
-    public double calculateResult(double left, double right) {
+    public double Calculate() {
         throw new InputMismatchException("Invalid operator sign: " + sign);
     }
 }

@@ -1,9 +1,9 @@
-package ProjectCalculator;
+package project_1;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import ProjectCalculator.src.Calculator;
+import project_1.src.Calculator;
 
 public class CalculatorApp {
     private static Scanner scanner = new Scanner(System.in);
@@ -13,13 +13,20 @@ public class CalculatorApp {
         double firstNum = 0;
         double secondNum = 0;
         try {
-            firstNum = scanner.nextDouble();
+            firstNum = getNumberFromInput();
             operator = scanner.next().charAt(0);
-            secondNum = scanner.nextDouble();
+            secondNum = getNumberFromInput();
         } catch (InputMismatchException ime) {
             System.out.println("invalid input");
         }
-            Calculator calculator = new Calculator();
-            System.out.println(calculator.makeCalculation(firstNum, secondNum, operator));   
+            Calculator calculator = new Calculator(firstNum, secondNum);
+            System.out.println(calculator.Calculate(operator));   
+
     }
+
+    public static double getNumberFromInput(){
+        return scanner.nextDouble();
+
+    }
+
 }
