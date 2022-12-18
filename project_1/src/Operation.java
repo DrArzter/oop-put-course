@@ -1,5 +1,5 @@
-package ProjectCalculator.src;
+package project_1.src;
 
-public interface Operation {
-    double calculateResult(double left, double right);
+interface Operation {
+    double Calculate();
 }

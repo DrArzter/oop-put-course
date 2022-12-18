@@ -1,4 +1,4 @@
-package ProjectCalculator.src;
+package project_1.src;
 
 class Modulo implements Operation {
     private final double operand1;

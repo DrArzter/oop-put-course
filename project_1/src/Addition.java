@@ -1,8 +1,15 @@
-package ProjectCalculator.src;
+package project_1.src;
 
-public class Addition implements Operation {
+class Addition implements Operation {
+    private final double firstNum;
+    private final double secondNum;
+    Addition(double firstNum, double secondNum){
+        this.firstNum = firstNum;
+        this.secondNum = secondNum;
+    }
+        
     @Override
-    public double calculateResult(double left, double right) {
-        return left + right;
+    public double Calculate() {
+        return firstNum + secondNum;
     }
 }

@@ -1,4 +1,4 @@
-package ProjectCalculator.src;
+package project_1.src;
 
 class Exponential implements Operation {
     private final double firstNum;
